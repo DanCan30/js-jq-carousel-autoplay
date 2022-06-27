@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Flex */
+.flx {
+    display: flex;
+}
+
+.flx-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flx-column {
+    flex-direction: column;
+}
+
+.flx-between {
+    justify-content: space-between;
+}
+
+.flx-around {
+    justify-content: space-around;
+}
+
+
+/* Carousel */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#carousel-container {
+    max-width: 1000px;
+    width: 50%;
+    margin: 100px auto;
+}
+
+#img-container {
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 700px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: none;
+    object-fit: cover;
+}
+
+.buttons-container {
+    width: 100%;
+}
+
+button {
+    color: white;
+    background: darkblue;
+    padding: 20px 30px;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#thumbnails-container {
+    width: 30%;
+}
+
+.thumbnail {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.thumbnail.active {
+    border: 2px solid grey;
+}
+
+/* Scripts */
+
+.active {
+    display: block;
+}
